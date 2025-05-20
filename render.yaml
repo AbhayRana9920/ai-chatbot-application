@@ -5,8 +5,10 @@ services:
     plan: free
     rootDir: gemnibot
     buildCommand: |
+      chmod +x mvnw
       ./mvnw clean package -DskipTests
-      docker build -t gemnibot-backend .
+      ls -la target/
+      docker build --no-cache -t gemnibot-backend .
     envVars:
       - key: JAVA_VERSION
         value: 21
