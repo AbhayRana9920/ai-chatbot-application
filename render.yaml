@@ -4,21 +4,17 @@ services:
     runtime: docker
     plan: free
     rootDir: gemnibot
-    buildCommand: |
-      chmod +x mvnw
-      ./mvnw clean package -DskipTests
-      ls -la target/
-      docker build --no-cache -t gemnibot-backend .
+    buildCommand: docker build -t gemnibot-backend .
     envVars:
       - key: JAVA_VERSION
         value: 21
       - key: GEMINI_API_KEY
         sync: false
       - key: GEMINI_API_URL
-        value: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=
+        value: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=
 
   - type: web
-    name: gemnibot-frontend
+    name: gemnibot
     runtime: static
     rootDir: gemnibot-frontend
     buildCommand: npm install && npm run build
