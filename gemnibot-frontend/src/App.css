@@ -1,0 +1,144 @@
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.App {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(80, 0, 120, 0.10);
+  padding: 32px 28px 40px 28px;
+}
+
+header {
+  background: linear-gradient(90deg, #7c3aed 60%, #06b6d4 100%);
+  border-radius: 18px 18px 0 0;
+  margin: -32px -28px 32px -28px;
+  padding: 36px 0 26px 0;
+  box-shadow: 0 2px 12px rgba(124, 58, 237, 0.10);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.7rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(6, 182, 212, 0.10);
+}
+
+label {
+  font-size: 1.1rem;
+  color: #7c3aed;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px 18px;
+  border: 2px solid #a5b4fc;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #f1f5f9;
+  color: #312e81;
+}
+
+input[type="text"]:focus {
+  border-color: #06b6d4;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 2px #a5b4fc33;
+}
+
+button {
+  background: linear-gradient(90deg, #7c3aed 60%, #06b6d4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(124, 58, 237, 0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+}
+
+button:hover, button:focus {
+  background: linear-gradient(90deg, #6d28d9 60%, #0891b2 100%);
+  box-shadow: 0 4px 20px rgba(6, 182, 212, 0.13);
+  transform: translateY(-2px) scale(1.03);
+}
+
+h3 {
+  color: #312e81;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.response-container {
+  margin-top: 24px;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  min-height: 40px;
+}
+
+.bot-bubble {
+  background: linear-gradient(120deg, #ede9fe 60%, #cffafe 100%);
+  color: #312e81;
+  border-radius: 18px 18px 18px 6px;
+  padding: 22px 28px;
+  margin: 0 auto 18px auto;
+  max-width: 90%;
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.08);
+  border: 1.5px solid #a5b4fc;
+  font-size: 1.13rem;
+  word-break: break-word;
+  position: relative;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.response-title {
+  font-weight: 700;
+  color: #7c3aed;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.response-meta {
+  margin-top: 18px;
+  padding: 14px 18px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  color: #334155;
+  font-size: 1rem;
+  border: 1px solid #e0e7ff;
+}
+
+@media (max-width: 800px) {
+  .App {
+    padding: 16px 6px 24px 6px;
+    max-width: 98vw;
+  }
+  header {
+    margin: -16px -6px 24px -6px;
+    padding: 24px 0 16px 0;
+  }
+}
