@@ -1,7 +1,7 @@
 services:
   - type: web
     name: gemnibot-backend
-    runtime: java
+    runtime: docker
     plan: free
     rootDir: gemnibot
     buildCommand: ./mvnw clean package -DskipTests
