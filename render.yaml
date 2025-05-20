@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: gemnibot-backend
+    runtime: java
+    plan: free
+    rootDir: gemnibot
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/gemnibot-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 21
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_API_URL
+        value: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=
+
+  - type: static
+    name: gemnibot-frontend
+    rootDir: gemnibot-frontend
+    buildCommand: npm install && npm run build
+    publishDir: dist
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: VITE_API_URL
+        value: https://gemnibot-backend.onrender.com/api/qna/ask
