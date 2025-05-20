@@ -5,7 +5,6 @@ services:
     plan: free
     rootDir: gemnibot
     buildCommand: ./mvnw clean package -DskipTests
-    startCommand: java -jar target/gemnibot-0.0.1-SNAPSHOT.jar
     envVars:
       - key: JAVA_VERSION
         value: 21
