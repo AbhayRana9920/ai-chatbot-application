@@ -14,11 +14,12 @@ services:
       - key: GEMINI_API_URL
         value: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=
 
-  - type: static
+  - type: web
     name: gemnibot-frontend
+    runtime: static
     rootDir: gemnibot-frontend
     buildCommand: npm install && npm run build
-    publishDir: dist
+    staticPublishPath: ./dist
     envVars:
       - key: NODE_VERSION
         value: 18
