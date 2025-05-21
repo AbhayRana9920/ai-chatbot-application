@@ -1,6 +1,19 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/AbhayRana9920/ai-chatbot-application)
+![GitHub stars](https://img.shields.io/github/stars/AbhayRana9920/ai-chatbot-application?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/AbhayRana9920/ai-chatbot-application)
+![GitHub license](https://img.shields.io/github/license/AbhayRana9920/ai-chatbot-application)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fgemnibot.onrender.com)
+
 # GemniBot: A Gemini AI Chatbot Application
 
 A full-stack AI chatbot web application using Google Gemini API, built with a React (Vite) frontend and a Spring Boot backend.
+
+## 🌐 Live Demo
+
+🔗 [Visit GemniBot](https://gemnibot.onrender.com)
+
+![GemniBot Preview](https://raw.githubusercontent.com/AbhayRana9920/ai-chatbot-application/main/preview.png)
+
 
 ## Table of Contents
 - [Features](#features)
