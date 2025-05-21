@@ -8,6 +8,13 @@
 
 A full-stack AI chatbot web application using Google Gemini API, built with a React (Vite) frontend and a Spring Boot backend.
 
+## 🌐 Live Demo
+
+🔗 [Visit GemniBot](https://gemnibot.onrender.com)
+
+![GemniBot Preview](https://raw.githubusercontent.com/your-username/your-repo/main/preview.png)
+
+
 ## Table of Contents
 - [Features](#features)
 - [Project Structure](#project-structure)
