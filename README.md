@@ -12,7 +12,7 @@ A full-stack AI chatbot web application using Google Gemini API, built with a Re
 
 🔗 [Visit GemniBot](https://gemnibot.onrender.com)
 
-![GemniBot Preview](https://raw.githubusercontent.com/your-username/your-repo/main/preview.png)
+![GemniBot Preview](https://raw.githubusercontent.com/AbhayRana9920/ai-chatbot-application/main/preview.png)
 
 
 ## Table of Contents
